@@ -1,0 +1,27 @@
+[
+  {
+    "type": "human",
+    "data": {
+      "content": "我的体重170斤，尺码推荐",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "human",
+      "name": null,
+      "id": null
+    }
+  },
+  {
+    "type": "ai",
+    "data": {
+      "content": "请提供更多信息以便更准确地推荐尺码，例如：\n\n- 身高  \n- 性别  \n- 胸围、腰围、臀围（如有）  \n- 所购衣物类型（如T恤、裤子、外套等）  \n- 偏好合身、宽松还是修身版型  \n\n仅凭体重170斤（85公斤）难以准确判断尺码，因为体型分布差异较大。",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "ai",
+      "name": null,
+      "id": null,
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": null
+    }
+  }
+]

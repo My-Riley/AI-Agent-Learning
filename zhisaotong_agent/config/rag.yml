@@ -1,0 +1,23 @@
+envs:
+  default:
+    model:
+      # 对话大模型名称（如使用 DashScope/通义千问，可配置为 qwen3-max 等）
+      chat_model_name: qwen3-max
+      # 向量模型名称（如 "text-embedding-v4"）
+      embedding_model_name: text-embedding-v4
+
+    retrieval:
+      # 每次召回的文档数量
+      top_k: 5
+      # 相关性阈值（0~1），可以根据实际检索效果调优
+      score_threshold: 0.3
+
+  dev:
+    # 开发环境下，可以适当降低 top_k 方便调试
+    retrieval:
+      top_k: 3
+
+  prod:
+    # 生产环境下，可根据召回质量和性能进行调整
+    retrieval:
+      top_k: 8

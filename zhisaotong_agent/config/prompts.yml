@@ -1,0 +1,22 @@
+envs:
+  default:
+    # 提示词文件路径配置（相对于项目根目录）
+    # 所有提示词文件统一存放在 prompts/ 目录下，便于管理和版本控制
+    prompt_paths:
+      main_prompt_path: prompts/main_prompt.txt
+      rag_summarize_prompt_path: prompts/rag_summarize.txt
+      report_prompt_path: prompts/report_prompt.txt
+
+    # 调试配置
+    debug:
+      enable_chain_debug: false
+
+  dev:
+    # 开发环境可以打开更多调试信息
+    debug:
+      enable_chain_debug: true
+
+  prod:
+    # 生产环境关闭调试信息
+    debug:
+      enable_chain_debug: false

@@ -1,0 +1,32 @@
+envs:
+  default:
+    # 外部数据文件路径（相对于项目根目录），供 usage_report 等工具使用
+    external_data_path: data/external/records.csv
+    agent:
+      # 智能体类型，目前规划为 ReAct
+      type: react
+      # 单轮对话中智能体最多可执行的工具调用/思考步数
+      max_iterations: 10
+
+      # 可用工具列表，后续可在 agent_tools.py 中按 name 进行映射
+      tools:
+        - name: rag_search
+          description: 基于知识库检索并回答用户问题
+        - name: usage_report
+          description: 根据用户使用数据生成报告与优化建议
+
+    conversation:
+      # 单个会话中保留的历史轮次数量
+      max_history_turns: 10
+      # 默认对话语言
+      language: zh
+
+  dev:
+    agent:
+      # 开发环境适当降低迭代次数，便于调试与观察
+      max_iterations: 5
+
+  prod:
+    agent:
+      # 生产环境可以根据复杂度适当提高迭代次数
+      max_iterations: 12

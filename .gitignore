@@ -1,0 +1,104 @@
+# 环境变量文件
+.env
+.env.local
+.env.*.local
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+lib64
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# 虚拟环境
+venv/
+ENV/
+env/
+.venv
+# Conda 本地环境（放在项目目录下）
+.conda-*/
+bin/
+include/
+pyvenv.cfg
+.python-version
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.sublime-*
+.spyderproject
+.spyproject
+
+# 操作系统
+.DS_Store
+Thumbs.db
+
+# 日志文件
+*.log
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# 测试和覆盖率
+.pytest_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+.tox/
+.hypothesis/
+coverage.xml
+*.cover
+*.coveragerc
+
+# 数据库
+*.db
+*.sqlite
+*.sqlite3
+
+# 向量数据库和MD5记录
+rag-clothing-customer-service/chroma_db/
+rag-clothing-customer-service/md5.text
+zhisaotong_agent/data/chroma_db/
+zhisaotong_agent/data/md5.text
+
+# 聊天历史记录
+zhisaotong_agent/data/history/
+
+# 临时文件
+*.tmp
+*.bak
+*.cache
+*.orig
+*.rej
+
+# 代码检查工具
+.ruff_cache/
+.dmypy.json
+
+# Python 打包
+*.pyz
+
+# 其它环境生成的目录
+share/
+
+# 本项目本地环境/配置目录
+etc/

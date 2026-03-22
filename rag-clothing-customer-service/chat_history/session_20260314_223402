@@ -1,0 +1,27 @@
+[
+  {
+    "type": "human",
+    "data": {
+      "content": "我的体重170斤，尺码推荐",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "human",
+      "name": null,
+      "id": null
+    }
+  },
+  {
+    "type": "ai",
+    "data": {
+      "content": "请提供更多信息，例如您的身高、性别、体型（如偏胖、匀称等），以及您要购买的具体服装类型（如T恤、裤子、外套等），以便更准确地推荐尺码。",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "ai",
+      "name": null,
+      "id": null,
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": null
+    }
+  }
+]
